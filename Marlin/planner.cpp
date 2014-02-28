@@ -539,7 +539,7 @@ void plan_buffer_line(float *destination, float feed_rate)
   // Calculate target position in absolute steps
   //this should be done after the wait, because otherwise a M92 code within the gcode disrupts this calculation somehow
   long target[NUM_AXIS];
-  for(int i = 0; i < NUM_AXIS; i ++)
+  for(int i = 0; i < NUM_AXIS; i++)
   {
     target[i] = lround(destination[i] * axis_steps_per_unit[i]);
   }
