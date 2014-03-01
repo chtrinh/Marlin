@@ -612,7 +612,7 @@ void plan_buffer_line(float *destination, float feed_rate)
   bool no_extruder_movement = true;
   for(int i = 0; i < NUM_AXIS; i++)
   {
-    if(block->steps[i] =! 0)
+    if(block->steps[i] != 0)
     {
       no_extruder_movement = false;
       break;
